@@ -9,7 +9,7 @@ screen = Screen()
 # setting up the screen features
 screen.setup(600,600)
 screen.bgcolor("black")
-screen.title("My Snake Game")
+screen.title("Abhirup's Snake Game")
 
 screen.tracer(0)   # Stops the screen animation/transition
 
