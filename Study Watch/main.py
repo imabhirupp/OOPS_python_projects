@@ -70,7 +70,7 @@ window.config(padx=100, pady=50, bg=YELLOW)                                     
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)             # Canvas where the image is entered
 tomato_image = PhotoImage(file="tomato.png")                                        # Storing and calling the image
-canvas.create_image(100,112,image=tomato_image)                               # Creating the image in detail
+canvas.create_image(100,112,image=tomato_image)                                     # Creating the image in detail
 timer_text = canvas.create_text(100,130,text="00:00",fill="white",
                                 font=(FONT_NAME,35,"bold"))                         # Creating the timer_start in detail
 canvas.grid(column=1,row=1)                                                         # Setting the canvas at its posi
