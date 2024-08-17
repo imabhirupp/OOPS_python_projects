@@ -14,12 +14,12 @@ reps = 0
 timer = None
 # ---------------------------- TIMER RESET -------------------------------
 def resetf():
-    window.after_cancel(timer)                                                     # To reset the timer using windows function in tkinter
+    window.after_cancel(timer)                                                      # To reset the timer using windows function in tkinter
     canvas.itemconfig(timer_text, text="00:00")
     timer_label.config(text="Timer")
     check_mark.config(text="")
     global reps
-    reps = 0                                                                       # Resetting the check mark
+    reps = 0                                                                        # Resetting the check mark
 
 # ---------------------------- TIMER MECHANISM -------------------------------
 def startf():
