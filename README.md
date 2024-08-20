@@ -1,1 +1,1 @@
-OOPS Project with different difficulty level in Python
+OOPS Projects with different difficulty level in Python
