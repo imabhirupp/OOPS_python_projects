@@ -12,10 +12,14 @@ current_tuple = (current.month, current.day)                                    
 # month = current.month
 
 data = pandas.read_csv("birthdays.csv")                                                                                 # Accessing the contents of the birthday file
-birthday_dict = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows()}               # Creating a dict with month and day using iterrows
+birthday_dict = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows()}               # Creating a dict with month and day as key and the whole data as value using iterrows
 
-if current_tuple in birthday_dict:                                                                                      # Creating a dict with month and day as key and the whole data as value using iterrows
-    birthday_person = birthday_dict[current_tuple]                                                                      # 
+
+# Example - birthday_dict = { (25,6): Abhirup,abhirupsinha@yahoo.com,2001,6,25 }
+
+
+if current_tuple in birthday_dict:                                                                                      # Checking whether current day and month is somebody's birthday by comparing it with the dates in the birthday_dict 
+    birthday_person = birthday_dict[current_tuple]                                                                      # If current tuple exists inside our birthday_dict, then we are accessing the item of the key that matches current tuple
     file = f"letter_templates/letter_{random.randint(1,3)}.txt"                                                         # Selecting random letter format from the saved formats
 
     with open(file) as letter_file:                                                                                     # Opening the letter
