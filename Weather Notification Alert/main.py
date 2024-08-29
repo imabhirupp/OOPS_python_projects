@@ -1,11 +1,11 @@
 import requests
 from twilio.rest import Client
 
-api_key = "ec027a9379160f18edb12445efdd6157"
+api_key = "Your API Key"
 api_endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 
-account_sid = "ACb40a6e3ac3054e2745bc4a6b79c45083"
-auth_token = "e5d8b3f1cbb4f6ca8610a49a8fb3eda4"
+account_sid = "Your Account Id"
+auth_token = "You Account Token"
 
 
 weather_params = {
