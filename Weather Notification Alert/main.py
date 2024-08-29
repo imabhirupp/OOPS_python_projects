@@ -33,8 +33,8 @@ if will_rain:
 
     message = client.messages.create(
         body="Bring an Umbrella, It's gonna rain.",
-        from_="+12566769328",
-        to="+919903795169",
+        from_="Temporary number you recieved",
+        to="Your verified/registered phone number",
     )
 
     print(message.status)
