@@ -7,10 +7,10 @@ COMPANY_NAME = "Tesla Inc"
 ## API endpoints and their keys
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
-stock_api_key = "8XJ18NEFGDSYVWHL"
+stock_api_key = "Your API Key"
 
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-news_api_key = "54d4016f48db4551837aac3d695739f5"
+news_api_key = "Your API Key"
 
 ## API Parameters
 
@@ -28,8 +28,8 @@ news_params = {
 
 ## Twilio Account details
 
-account_sid = "ACb40a6e3ac3054e2745bc4a6b79c45083"
-auth_token = "e5d8b3f1cbb4f6ca8610a49a8fb3eda4"
+account_sid = "Your SID"
+auth_token = "Your Auth Token"
 
 
 ## Using API to get the data
@@ -72,8 +72,8 @@ if diff_percentage > 5:
     for article in message_content:
         message = client.messages.create(
                 body=article,
-                from_="+12566769328",
-                to="9903795169",
+                from_="Your temporary number",
+                to="Your registered/verified number",
         )
         print(message.status)
 
