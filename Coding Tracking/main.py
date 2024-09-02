@@ -13,6 +13,7 @@ params = {
     "notMinor": "yes",
 }
 
+## CREATE ACCOUNT
 # response = requests.post(url=pixel_endpoint, json=params)
 # print(response.text)
 
